@@ -1,6 +1,10 @@
 # AngularAi
 
-An Image recogintion app using Tensorflow JS and Mobile net
+An in browser Image recogintion app using Angular, Tensorflow JS and a retrained version of MobileNet
+
+
+
+[Live demo](https://angularai-cfa5d.firebaseapp.com/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
 
