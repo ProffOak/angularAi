@@ -1,5 +1,7 @@
 # AngularAi
 
+An Image recogintion app using Tensorflow JS and Mobile net
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
 
 ## Development server
