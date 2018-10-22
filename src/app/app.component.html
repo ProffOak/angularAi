@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<app-navbar>
+
+</app-navbar>
+<h1 class="mat-h1">
+  Welcome to {{ title }}!
+</h1>
+
+<app-drop-zone [isImage]="true" [isMultiple]="false" (fileListEvent)="onFileSelect($event)"></app-drop-zone>
+<div class="center-div">
+<img *ngIf="image" [src]="image" style="width: 450px; height: 450px; object-fit: cover">
+</div>
+<h2 class="mat-h2 center-div" >{{result}}</h2>
+<h3 class="mat-h3 center-div">{{time}}</h3>

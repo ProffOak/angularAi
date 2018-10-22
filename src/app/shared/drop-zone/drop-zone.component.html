@@ -1,0 +1,17 @@
+<div class="center-div">
+  <div class="dropzone"
+       appDropZone
+       (hovered)="toggleHover($event)"
+       (dropped)="fileSelected($event)"
+       [class.hovering]="isHovering">
+    <div>
+      <h3 class="mat-h3" style="font-weight: bold;" *ngIf="!isMultiple">Släpp fil här</h3>
+      <h3 class="mat-h3" style="font-weight: bold;" *ngIf="isMultiple">Släpp filerna här</h3>
+      <button type="button" mat-raised-button color="accent" onclick="document.getElementById('fileInput').click()">
+        Välj Filer
+      </button>
+      <input style="display:none;" id="fileInput" [multiple]="isMultiple" [accept]="isImage ? 'image/*' : '*'" type="file"
+             (change)="fileSelected($event.target.files)">
+    </div>
+  </div>
+</div>
